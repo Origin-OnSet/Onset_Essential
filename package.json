@@ -1,0 +1,36 @@
+{
+    "author": "🌌 Origin | Fry",
+    "version": "1.0",
+    "server_scripts": [
+        "Group_Config.lua",
+        "Global_Config.lua",
+
+        "Include/Error.lua",
+        "Include/function.lua",
+        "Include/lodash.lua",
+
+        "Group/Load_Group.lua",
+        "Group/Player_Connect.lua",
+        "Command/Group/s_Group.lua",
+        
+        "Command/Tp/s_tp.lua",
+
+        "Command/Ban/s_function.lua",
+        "Command/Ban/s_ban.lua",
+
+        "Command/Kick/s_kick.lua",
+
+        "Command/White_List/s_white_list.lua",
+        "Command/White_List/s_function.lua",
+
+        "Chat/s_chat.lua",
+        "json.lua",
+        "file.lua",
+        "Data/s_data_function.lua"
+    ],
+    "client_scripts": [
+    ],
+    "files": [
+
+    ]
+}
