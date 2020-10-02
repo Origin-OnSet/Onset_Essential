@@ -1,5 +1,5 @@
 # Onset_Essential
-
+Essential is a permission manager package and essential player and admin command.
 
 ## How to install
 - Edit your server_config.json and add "Onset_Essential in the packages section before the files who need it
