@@ -31,10 +31,10 @@ AddCommand("god", function(player, dest)
     if dest == nil then dest = player end
 
     if PlayerData[dest].god == 0 then 
-        PlayerData[dest].god = 1
+        PlayerData[dest].god = true
         MessageChat(dest, 2, "god mod : enbaled")
     else
-        PlayerData[dest].god = 0
+        PlayerData[dest].god = false
         MessageChat(dest, 2, "god mod : disabled")
     end
 end)
@@ -68,6 +68,24 @@ AddCommand("vehicle", function(player, vehicle)
     MessageChat(player, 2, "vehicle : "..vehicle)
 end)
 
-AddCommand("/", function(player)
-    MessageChat(player, 2, "test")
+AddCommand("kill", function(player, dest)
+    local dest = tonumber(dest)
+
+    if PLAYER_HAVE_PERMISSION(player, "essential.kill") == false then MessageChat(player, 4, " You don't haver permission to execute this commande !") return end
+
+    if dest == nil then MessageChat(player, 4, " syntaxe error /kill [player] !") return end
+
+    if PlayerData[tonumber(dest)] == nil then MessageChat(player, 4, " "..dest.." is not valide player !") return end
+
+    SetPlayerHealth(dest, 0)
+end)
+
+AddCommand("suicide", function(player)
+    if PLAYER_HAVE_PERMISSION(player, "essential.suicide") == false then MessageChat(player, 4, " You don't haver permission to execute this commande !") return end
+
+    SetPlayerHealth(player, 0)
+end)
+
+AddEvent("OnPlayerDamage", function(player, damagetype, amount)
+    if PlayerData[player].god == true then SetPlayerHealth(player, GetPlayerHealth() + amount) end
 end)

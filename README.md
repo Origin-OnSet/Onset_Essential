@@ -96,6 +96,7 @@ GROUP_LIST = {
 ## Permission list
 ```lua
 essential.kill
+essential.suicide
 
 essential.tp.pos
 essential.tp.to
@@ -123,8 +124,6 @@ essential.armor
 essential.god
 essential.mute
 essential.ping
-essential.message.seeadmin
-essential.message.sendadmin
 
 essential.groupe.add.player
 essential.groupe.remove.player
@@ -167,7 +166,16 @@ GET_PLAYER_GROUP(player) -- return player group
 /tp_pos [x] [y] [z]
 /tp_to [player]
 /tp_all
+
 /get_pos -- return x, y, z possition 
+/ping
+/god
+/vehicle [vehicle Id]
+/weapon [weapon Id]
+/armor ([player])
+/heal ([player])
+/kill [player]
+/suicide
 
 /add_player_group [player] [group]
 /remove_player_group [player]

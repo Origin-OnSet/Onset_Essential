@@ -78,7 +78,7 @@ function SET_PLAYER_DATA(player)
     PlayerData[player].steamId = GET_STEAM_ID(player)
     
     PlayerData[player].name = GetPlayerName(player)
-    PlayerData[player].god = 0
+    PlayerData[player].god = false
 
     PlayerData[player].groupId = GET_PLAYER_NUMBER_ID(player)
     PlayerData[player].group = GET_PLAYER_GROUP(player)
