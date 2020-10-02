@@ -11,6 +11,8 @@ function ADD_PLAYER_TO_WHITE_LIST(steamId)
 
     return true
 end
+AddFunctionExport("ADD_PLAYER_TO_WHITE_LIST", ADD_PLAYER_TO_WHITE_LIST)
+
 
 function REMOVE_PLAYER_TO_WHITE_LIST(steamId)
     local steamId = tostring(steamId)
@@ -25,6 +27,7 @@ function REMOVE_PLAYER_TO_WHITE_LIST(steamId)
 
     return true
 end
+AddFunctionExport("REMOVE_PLAYER_TO_WHITE_LIST", REMOVE_PLAYER_TO_WHITE_LIST)
 
 function GET_PLAYER_WHITE_LIST(steamId)
     local steamId = tostring(steamId)
@@ -39,3 +42,4 @@ function GET_PLAYER_WHITE_LIST(steamId)
 
     return false
 end
+AddFunctionExport("GET_PLAYER_WHITE_LIST", GET_PLAYER_WHITE_LIST)

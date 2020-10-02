@@ -2,6 +2,8 @@ function GET_PLAYER_GROUP(player)
     local steamId = GET_STEAM_ID(player)
     return DATA_PLAYER_GROUP[PlayerData[player].groupId].group
 end
+AddFunctionExport("GET_PLAYER_GROUP", GET_PLAYER_GROUP)
+
 
 function GET_PLAYER_EXIST(player)
     local steamId = GET_STEAM_ID(player)
@@ -16,6 +18,8 @@ function GET_PLAYER_EXIST(player)
 
     return false
 end
+AddFunctionExport("GET_PLAYER_EXIST", GET_PLAYER_EXIST)
+
 
 function SET_PLAYER_GROUP(player, group)
     if PERMISSION_GROUP[group] == nil or PlayerData[player] == nil then return false end

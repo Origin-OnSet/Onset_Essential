@@ -5,28 +5,26 @@
         "Group_Config.lua",
         "Global_Config.lua",
 
+        "s_main.lua",
+
         "Include/Error.lua",
-        "Include/function.lua",
         "Include/lodash.lua",
 
-        "Group/Load_Group.lua",
-        "Group/Player_Connect.lua",
-        "Command/Group/s_Group.lua",
-        
-        "Command/Tp/s_tp.lua",
+        "Function/s_ban_function.lua",
+        "Function/s_group_function.lua",
+        "Function/s_white_list_function.lua",
+        "Function/s_data_function.lua",
 
-        "Command/Ban/s_function.lua",
-        "Command/Ban/s_ban.lua",
-
-        "Command/Kick/s_kick.lua",
-
-        "Command/White_List/s_white_list.lua",
-        "Command/White_List/s_function.lua",
+        "Command/s_Group.lua",
+        "Command/s_tp.lua",
+        "Command/s_ban.lua",
+        "Command/s_kick.lua",
+        "Command/s_white_list.lua",
+        "Command/s_useful.lua",
 
         "Chat/s_chat.lua",
         "json.lua",
-        "file.lua",
-        "Data/s_data_function.lua"
+        "file.lua"
     ],
     "client_scripts": [
     ],

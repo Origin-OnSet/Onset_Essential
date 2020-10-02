@@ -13,6 +13,8 @@ function PLAYER_BAN(player, reason)
 
     return true
 end
+AddFunctionExport("PLAYER_BAN", PLAYER_BAN)
+
 
 function PLAYER_UNBAN(steamId)
 
@@ -27,6 +29,8 @@ function PLAYER_UNBAN(steamId)
     UPDATE_BAN_LIST()
 
 end
+AddFunctionExport("PLAYER_UNBAN", PLAYER_UNBAN)
+
 
 function GET_PLAYER_IS_BAN(steamId)
 
@@ -38,3 +42,4 @@ function GET_PLAYER_IS_BAN(steamId)
 
     return false
 end
+AddFunctionExport("GET_PLAYER_IS_BAN", GET_PLAYER_IS_BAN)
