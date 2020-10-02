@@ -1,15 +1,14 @@
 # Onset_Essential
-Essential is a permission manager package and essential player and admin command.
+Essential is a permission manager package with player and admin commands.
 
 ## How to install
-- Edit your server_config.json and add "Onset_Essential in the packages section before the files who need it
-
+- Edit your server_config.json and add "Onset_Essential in the packages section before the files which require it:
 ```json
 "packages": [
   "Onset_Essential"
 ],
 ```
-- On the files who needs to initialize the Onset_Weapon_Drop using this function  
+- Import the package on top of the files to initialize Onset_Weapon_Drop using:
 ```lua
 local Essential = ImportPackage("Onset_Essential")
 ```
