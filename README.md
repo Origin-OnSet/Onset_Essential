@@ -135,16 +135,16 @@ essential.groupe.player.list
 ```lua
 PLAYER_BAN(player, reason) -- ban player
 PLAYER_UNBAN(steamId) -- unban player with steamId64
-GET_PLAYER_IS_BAN(steamId) -- return true if player are ban 
+GET_PLAYER_IS_BAN(steamId) -- return true if player is ban 
 
 ADD_PLAYER_TO_WHITE_LIST(steamId) -- add player to white list
-REMOVE_PLAYER_TO_WHITE_LIST(steamId) -- remove player to white list
-GET_PLAYER_WHITE_LIST(steamId) -- return true if player are in the white list
+REMOVE_PLAYER_TO_WHITE_LIST(steamId) -- remove player from white list
+GET_PLAYER_WHITE_LIST(steamId) -- return true if player is in the white list
 
 PLAYER_HAVE_PERMISSION(player,permission) -- return true if player have permission
 GROUP_HAVE_PERMISSION(group, permission) -- return true if group have permission
 ADD_PLAYER_TO_GROUP(player, group) -- add player to group
-REMOVE_PLAYER_TO_GROUP(player) -- set player groupe default
+REMOVE_PLAYER_TO_GROUP(player) -- set player groups to default
 
 GET_PLAYER_EXIST(player) -- return true if player connect at least once
 GET_PLAYER_GROUP(player) -- return player group
